@@ -37,8 +37,11 @@ jQuery(document).ready(function () {
     var child = jQuery(this).children();
     child.click(function () {
       var pos = child.data("value");
-      jQuery("#blueSlider").slider({value: pos});
+      jQuery("#blueSlider").slider({  value: pos,
+         animate: "slow"
+        });
       console.log(pos + "f");
+       jQuery("#amount").val(jQuery("#blueSlider").slider("value"));
     });
   });
 });
