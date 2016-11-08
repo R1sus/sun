@@ -4,6 +4,10 @@ body{
     width:100%;
     height: auto;
     overflow-x:hidden;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 .header{
@@ -49,6 +53,7 @@ body{
             justify-content: space-between;
     position:relative;
     margin:0 auto;
+    cursor:pointer;
 }
 .itemPerson {
     -webkit-transform:scale(0.5);
@@ -269,6 +274,7 @@ label {
   }
 #scrollbar {
     height:40px;
+    cursor: pointer;
 }
 #info-img {
     position:relative;
