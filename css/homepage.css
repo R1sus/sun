@@ -1,0 +1,274 @@
+body{
+    margin: 0 auto;
+    position: relative;
+    width:100%;
+    height: auto;
+    overflow-x:hidden;
+}
+
+.header{
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    
+    
+}
+
+.header-block{
+    width: 85%;
+    height: auto;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+ h1{
+    margin: 0;
+    /*padding: 230px 0 50px 0;*/
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 38px;
+    text-align: center;
+    color: #4b94e8;
+    line-height: 2;
+    text-transform: uppercase;
+}
+
+.peopleIcon {
+    width:65%;
+    height:auto;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position:relative;
+    margin:0 auto;
+}
+.itemPerson {
+    -webkit-transform:scale(0.5);
+            transform:scale(0.5);
+    width:18%;
+}
+.girl-active {
+    background: url("../images/homepage/sprite_people.png") no-repeat -25px -189px;
+	width: 55px;
+	height: 156px;
+
+}
+/*.girl {
+    background: url("../img/sprite_people.png") no-repeat -25px -16px;
+    width: 55px;
+	height: 156px;
+  }*/
+.family1 {
+    background:url("../images/homepage/sprite_people.png") no-repeat -25px -16px;
+	width: 117px;
+	height: 156px;
+}
+.family1-active {
+    background:url("../images/homepage/sprite_people.png") no-repeat -25px -188px;
+    width: 117px;
+	height: 156px;
+
+}
+
+.family2{
+    background:url("../images/homepage/sprite_people.png") no-repeat -25px -16px;
+	width: 159px;
+	height: 156px;
+}
+.family2-active {
+    background:url("../images/homepage/sprite_people.png") no-repeat -25px -188px;
+    width: 159px;
+	height: 156px;
+
+}
+.family3{
+    background:url("../images/homepage/sprite_people.png") no-repeat -25px -16px;
+	width: 203px;
+	height: 156px;
+}
+.family3-active {
+    background:url("../images/homepage/sprite_people.png") no-repeat -25px -188px;
+    width: 203px;
+	height: 156px;
+
+}
+.family4{
+    background:url("../images/homepage/sprite_people.png") no-repeat -25px -16px;
+	width: 239px;
+	height: 156px;
+}
+.family4-active {
+    background:url("../images/homepage/sprite_people.png") no-repeat -25px -188px;
+    width: 239px;
+	height: 156px;
+}
+
+.person-ident{
+    padding-bottom: 80px;
+    position:relative;
+    width:100%;
+   }
+
+.person-ident a:hover{
+    color: #4a94e7;
+}
+
+.person-ident li {
+    display: inline;
+   
+ }
+li>a {
+    text-decoration: none;
+    color: #b8b8b8;
+}
+
+.person-ident ul {
+   
+    margin: 0 auto;
+    width: 50vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    
+}
+
+::-webkit-input-placeholder {color:#4a94e7;}
+::-moz-placeholder          {color:#4a94e7;}/* Firefox 19+ */
+:-moz-placeholder           {color:#4a94e7;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#4a94e7;}
+
+main {
+    margin:0 auto;
+    position: relative;
+    width:90%;
+    height:auto;
+}
+.radio-form{
+    text-align: center;
+    width:20%;
+    position:relative;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.check {
+    width:20px;
+    height:20px;
+    background-color: #b8b8b8;
+    border-radius: 50%;
+    display:inline-block; 
+   
+}
+.check-active {
+    background-color:#4a94e7;
+    background-image:url(../images/homepage/chek.svg);
+    width:20px;
+    height:20px;
+}
+.radio-form p {
+    display: inline-block;
+    font-family: 'Droid Sans', sans-serif;
+   font-size: 16px;
+   color:#4a94e7;
+   padding-right: 10px;
+}
+.star-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 50px;
+}
+.item-block img  {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+}
+h5 {
+    font-family: 'Droid Sans', sans-serif;
+   font-size: 16px;
+   color:#4a94e7;
+       line-height: 4;
+}
+.down-button {
+    padding-top:30px;
+    width:100%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.buttonNext {
+    background-color: #4a94e7;
+    outline: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    text-decoration: none;
+    color:#fff;
+    padding: 10px;
+    font-size:14px;
+    font-weight: 400;
+    font-family: 'Droid Sans', sans-serif;
+    border-radius: 3px;
+}
+
+/*slider styles */
+#amount {
+    text-align: center;
+    color:#4a94e7;
+    font-family: 'Droid Sans', sans-serif;
+    font-size:15px;
+    border: 2px solid #4a94e7;
+}
+label {
+    color:#4a94e7;
+    font-family: 'Droid Sans', sans-serif;
+    font-size:15px;
+}
+#blueSlider .ui-slider-range { 
+    background: #4a94e7;
+}
+#blueSlider .ui-slider-handle {
+    border-radius:50%;
+    background: #4a94e7;
+    outline:none;
+    width:15px;
+    height:15px;
+
+}
+#blueSlider{
+  width:59%;
+  margin:0 auto;
+  position:relative;
+  background-color: #b8b8b8;
+  height:5px;
+  }
+#scrollbar p {
+    position: relative;
+    top: 5rem;
+    left: 28vw;
+  }
+#scrollbar {
+    height:40px;
+}
+#info-img {
+    position:relative;
+    top:1rem;
+}
