@@ -156,7 +156,7 @@ main {
 }
 .radio-form{
     text-align: center;
-    width:20%;
+    width:30vw;
     position:relative;
     margin: 0 auto;
     padding-bottom: 30px;
@@ -195,15 +195,16 @@ main {
             justify-content: space-between;
     padding-top: 50px;
 }
-.item-block img  {
+
+/*.item-block img  {
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
-}
+}*/
 h5 {
     font-family: 'Droid Sans', sans-serif;
    font-size: 16px;
    color:#4a94e7;
-       line-height: 4;
+    
 }
 .down-button {
     padding-top:30px;
@@ -263,7 +264,8 @@ label {
 #scrollbar p {
     position: relative;
     top: 5rem;
-    left: 28vw;
+    padding-left: 2rem;
+    text-align: center;
   }
 #scrollbar {
     height:40px;
