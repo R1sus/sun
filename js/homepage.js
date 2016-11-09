@@ -38,7 +38,7 @@ jQuery(document).ready(function () {
     child.click(function () {
       var pos = child.data("value");
       jQuery("#blueSlider").slider({  value: pos,
-         animate: "slow"
+         animate: 1000
         });
       console.log(pos + "f");
        jQuery("#amount").val(jQuery("#blueSlider").slider("value"));
@@ -58,3 +58,44 @@ jQuery(document).ready(function () {
                  jQuery('#check-yes').removeClass('check-active'); });
         });
 
+jQuery(document).ready(function ($){
+ 
+ 
+var stepForm = $("#orderForm");
+var fieldsetCount = $('#orderForm').children().length;
+var current = 1;
+console.log(fieldsetCount);
+var stepsWidth = 0;
+var widths = new Array();
+
+$('#steps .step').each(function (i) {
+    var step = $(this);
+    widths[i] = stepsWidth;
+    stepsWidth += step.width();
+});
+
+$('#steps').width(stepsWidth);
+console.log(stepsWidth);
+
+$('#navigation a').on('click', function (e) {
+    var $this = $(this);
+    var prev = current;
+    $this.closest('ul').find('li').removeClass('selected');
+    $this.parent().addClass('selected');
+
+    current = $this.parent().index() + 1;
+
+    $('#steps').stop().animate({
+        marginLeft: '-' + widths[current - 1] + 'px'
+    }, 500, function () {
+        $('#formElem').children(':nth-child(' + parseInt(current) + ')');
+    });
+    e.preventDefault();
+    console.log(e.type);
+});
+
+
+$('#orderForm > fieldset').each(function () {
+    var $fieldset = $(this);
+});
+});

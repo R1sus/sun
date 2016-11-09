@@ -1,3 +1,7 @@
+* {
+    padding: 0;
+    margin:0;
+}
 body{
     margin: 0 auto;
     position: relative;
@@ -9,8 +13,15 @@ body{
         -ms-user-select: none;
             user-select: none;
 }
+form {
+    display: block;
+}
+/*.orderForm{
+  width:100%;
+  position:relative;
+}*/
 
-.header{
+/*.header{
     margin: 0 auto;
     position: relative;
     width: 100%;
@@ -18,13 +29,14 @@ body{
     background-color: #fff;
     
     
-}
+}*/
 
-.header-block{
-    width: 85%;
+.wrapper{
+    width: 900px;
     height: auto;
     background-color: #fff;
     margin: 0 auto;
+    overflow: hidden;
 }
 
  h1{
@@ -39,7 +51,7 @@ body{
 }
 
 .peopleIcon {
-    width:65%;
+    width:70%;
     height:auto;
     display:-webkit-box;
     display:-ms-flexbox;
@@ -138,7 +150,7 @@ li>a {
 .person-ident ul {
    
     margin: 0 auto;
-    width: 50vw;
+    width: 42vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -152,13 +164,13 @@ li>a {
 ::-moz-placeholder          {color:#4a94e7;}/* Firefox 19+ */
 :-moz-placeholder           {color:#4a94e7;}/* Firefox 18- */
 :-ms-input-placeholder      {color:#4a94e7;}
-
+/*
 main {
     margin:0 auto;
     position: relative;
     width:90%;
     height:auto;
-}
+}*/
 .radio-form{
     text-align: center;
     width:30vw;
@@ -211,7 +223,7 @@ h5 {
    color:#4a94e7;
     
 }
-.down-button {
+.submit-button {
     padding-top:30px;
     width:100%;
     position: relative;
@@ -219,9 +231,11 @@ h5 {
     text-align: center;
 
 }
-.buttonNext {
+#orderButton {
     background-color: #4a94e7;
     outline: none;
+    box-shadow: none;
+    border:0;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -234,7 +248,9 @@ h5 {
     font-family: 'Droid Sans', sans-serif;
     border-radius: 3px;
 }
-
+#orderButton:hover {
+    background-color: #e79d4a;
+}
 /*slider styles */
 #amount {
     text-align: center;
@@ -279,4 +295,53 @@ label {
 #info-img {
     position:relative;
     top:1rem;
+}
+
+/*form step by step*/
+
+fieldset{
+    border:none;
+   
+}
+
+#steps{
+width:900px;
+overflow:hidden;
+margin:0 auto;
+position: relative;
+
+}
+.step{
+float:left;
+width:900px;
+
+}
+
+#navigation {
+width:900px;
+margin: 0 auto;
+height:45px;
+
+}
+
+#navigation ul{
+list-style:none;
+float:right;
+
+}
+#navigation ul li{
+float:left;
+border-right:2px solid #b8b8b8;
+/*border-left:1px solid #b8b8b8;*/
+position:relative;
+padding-right: 5px;
+font-size:20px;
+
+}
+.content {
+  width:900px;
+  height:100%;
+  text-align:center;
+  position:relative;
+  margin: 0 auto;
 }
