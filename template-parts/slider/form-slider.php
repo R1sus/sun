@@ -1,3 +1,5 @@
+	
+	<div class = "wrapper">
 	<div id = "steps">
 			<form id="orderForm" name = "orderForm">
 				<fieldset class ="step">
@@ -68,9 +70,7 @@
 				<h5>Lorem ipsum</h5>
 			</div>
 		</div>
-		</fieldset>
-		<fieldset class="step">
-			<h1>Danke!</h1>
+	
 			<div class="submit-button">
 				<button id="orderButton" type="submit" >&lt; Jetzt Berechnen</button>
 			</div>
@@ -82,8 +82,9 @@
 			<li class = "selected"><a href = "#">Step 1</a></li>
 			<li><a href = "#">Step 2</a></li>
 			<li><a href = "#">Step 3</a></li>
-			<li><a href = "#">Step 4</a></li>
+			<!--<li><a href = "#">Step 4</a></li>-->
 			</ul>
+		</div>
 		</div>
 
 	<?php do_action( 'homepage_slider_assets' ); ?>
