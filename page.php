@@ -22,9 +22,7 @@ get_header(); ?>
 		<?php if ( presscore_is_content_visible() ): ?>
 
 			<div id="content" class="content" role="main">
-			<?php if (is_front_page()) 
-				echo 'test';
-			 ?>
+
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 					<?php do_action('presscore_before_loop'); ?>
