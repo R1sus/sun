@@ -93,9 +93,6 @@ if ( presscore_is_content_visible() ): ?>
 				<h5>Lorem ipsum</h5>
 			</div>
 		</div>
-		</fieldset>
-		<fieldset class="step">
-			<h1>Danke!</h1>
 			<div class="submit-button">
 				<button id="orderButton" type="submit" >&lt; Jetzt Berechnen</button>
 			</div>
@@ -107,7 +104,7 @@ if ( presscore_is_content_visible() ): ?>
 			<li class = "selected"><a href = "#">Step 1</a></li>
 			<li><a href = "#">Step 2</a></li>
 			<li><a href = "#">Step 3</a></li>
-			<li><a href = "#">Step 4</a></li>
+			<!--<li><a href = "#">Step 4</a></li>-->
 			</ul>
 		</div>
 		</div>
