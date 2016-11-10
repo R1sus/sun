@@ -345,3 +345,6 @@ font-size:20px;
   position:relative;
   margin: 0 auto;
 }
+.selected a {
+    color: #4a94e7;
+}
