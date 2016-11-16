@@ -99,3 +99,16 @@ $('#orderForm > fieldset').each(function () {
     var $fieldset = $(this);
 });
 });
+
+function getValue(o)
+{
+jQuery("#blueSlider").slider({value: o.value});
+console.log(o.value);
+
+}
+
+jQuery(document).ready(function() {
+jQuery('#amount').keypress(function(key) {
+if(key.charCode < 48 || key.charCode > 57) return false;
+});
+});	
