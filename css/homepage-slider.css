@@ -202,7 +202,8 @@ li>a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-top: 50px;
+    /*padding-top: 50px;*/
+    padding:50px 10px;
 }
 
 
@@ -344,4 +345,8 @@ font-size:20px;
 }
 .selected a {
     color: #4a94e7;
+}
+.selected-item {
+    /*border:2px solid #4a94e7;*/
+    box-shadow:5px 5px 5px #4a94e7;
 }

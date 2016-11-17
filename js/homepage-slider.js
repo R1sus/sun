@@ -112,3 +112,16 @@ jQuery('#amount').keypress(function(key) {
 if(key.charCode < 48 || key.charCode > 57) return false;
 });
 });	
+
+// jQuery(".item-block").on("click", function(){
+//   jQuery(".item-block").addClass("selected-item");
+// });
+
+jQuery('.star-block ').on('click','.item-block', function (e) {
+    var $this = jQuery(this);
+    jQuery('.star-block .item-block ').removeClass('selected-item');
+    $this.addClass('selected-item');
+    // $this.addClass('selected-item');
+       e.preventDefault();
+   
+  });
